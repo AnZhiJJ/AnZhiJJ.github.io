@@ -3963,38 +3963,38 @@ h1.page-title + .tag-cloud-list {
   clear: both;
   content: '';
 }
-#post .tag_share .post-meta__tag-list {
+#post .post-meta__tag-list {
   display: inline-block;
 }
-#post .tag_share .post-meta__tags {
+#post .post-meta__tags {
   display: inline-block;
   margin: 8px 8px 8px 0;
   padding: 0 12px;
   width: fit-content;
   border: 1px solid #b19693;
   border-radius: 12px;
-  color: #fff;
-  font-size: 0.85em;
+  color: #b19693;
+  font-size: 14px;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-#post .tag_share .post-meta__tags:hover {
-  background: #fff;
+#post .post-meta__tags:hover {
+  background: #b19693;
   color: var(--white);
 }
-#post .tag_share .post_share {
+#post .post_share {
   display: inline-block;
   float: right;
   margin: 8px 0 0;
   width: fit-content;
 }
-#post .tag_share .post_share .social-share {
+#post .post_share .social-share {
   font-size: 0.85em;
 }
-#post .tag_share .post_share .social-share .social-share-icon {
+#post .post_share .social-share .social-share-icon {
   margin: 0 4px;
   width: 1.85em;
   height: 1.85em;
