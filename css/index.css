@@ -3414,7 +3414,7 @@ h1.page-title + .tag-cloud-list {
 }
 #page-header #site_social_icons .social-icon {
   margin: 0 10px;
-  color: var(--light-grey);
+  color: var(--light-white);
   text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
   font-size: 1.43em;
 }
