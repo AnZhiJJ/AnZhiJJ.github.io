@@ -1902,7 +1902,7 @@ input::placeholder {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: var(--anzhiyu-background);
+  background: url(https://cdn.staticaly.com/gh/AnZhiJJ/Blog_Img@main/博客站点配图/EuropeFromISS_ZH-CN0722816540_UHD.5swi0cngoh80.jpg);
   background-attachment: local;
   background-position: center;
   background-size: cover;
@@ -11848,7 +11848,7 @@ div#category {
 }
 /* 分类条 */
 #category-bar.category-bar {
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.6);
 }
 /*夜间模式伪类遮罩层透明*/
 [data-theme="dark"] #recent-posts > .recent-post-item {
@@ -12938,13 +12938,13 @@ details .content > *:nth-child(1) {
   --anzhiyu-meta-theme-post-color: #C6B3B1;
   --anzhiyu-bar-background: #d1c1bf;
   --anzhiyu-theme-op: #d1c1bf80;
-  --anzhiyu-card-bg-none: #00000000;
+  --anzhiyu-card-bg-none: rgba(255, 255, 255, 0.6);
   --anzhiyu-main-op-deep: var(--anzhiyu-theme-op-deep) !important;
   --anzhiyu-gray-op: #9999992b;
   --anzhiyu-theme-top: var(--anzhiyu-theme);
-  --anzhiyu-white: #fff;
+  --anzhiyu-white: rgba(255, 255, 255, 0.6);
   --anzhiyu-white-op: rgba(255, 255, 255, 0.2);
-  --anzhiyu-black: #000;
+  --anzhiyu-black: rgba(24,24,30,0.5);
   --anzhiyu-black-op: rgba(0, 0, 0, 0.2);
   --anzhiyu-none: rgba(0, 0, 0, 0);
   --anzhiyu-gray: #999999;
@@ -12982,7 +12982,7 @@ details .content > *:nth-child(1) {
   --anzhiyu-meta-theme-post-color: #C6B3B1;
   --anzhiyu-meta-theme-color: #C6B3B1;
   --anzhiyu-theme-op-deep: #d1c1bf;
-  --global-bg: #FFFFFF;
+  --global-bg: rgba(255, 255, 255, 0.6);
   --anzhiyu-theme: #B19693;
   --anzhiyu-theme-deep: #9c7975;
   --anzhiyu-theme-op: #C6B3B1;
@@ -12992,7 +12992,7 @@ details .content > *:nth-child(1) {
   --anzhiyu-pink: #ff7c7c;
   --anzhiyu-green: #57bd6a;
   --anzhiyu-fontcolor: #4c4948;
-  --anzhiyu-background: #ffffff;
+  --anzhiyu-background: #fff;
   --anzhiyu-reverse: #000;
   --anzhiyu-maskbg: rgba(255, 255, 255, 0.6);
   --anzhiyu-maskbgdeep: rgba(255, 255, 255, 0.85);
@@ -13004,9 +13004,9 @@ details .content > *:nth-child(1) {
   --anzhiyu-card-btn-bg: #d1c1bf;
   --anzhiyu-post-blockquote-bg: #fafcff;
   --anzhiyu-post-tabs-bg: #f2f5f8;
-  --anzhiyu-secondbg: #f1f3f8;
+  --anzhiyu-secondbg: rgba(255, 255, 255, 0.5);
   --anzhiyu-shadow-nav: 0 5px 12px -5px rgba(102, 68, 68, 0.05);
-  --anzhiyu-card-bg: #fff;
+  --anzhiyu-card-bg: rgba(255, 255, 255, 0.6);
   --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
   --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
   --anzhiyu-card-border: #C6B3B1;
@@ -13018,7 +13018,7 @@ details .content > *:nth-child(1) {
   --anzhiyu-blue: #d1c1bf;
   --anzhiyu-blue-tint: rgba(209, 193, 191, 0.5);
   --anzhiyu-theme-op-deep: #d1c1bf;
-  --global-bg: #18171d;
+  --global-bg: #0d0d0d;
   --anzhiyu-theme: #B19693;
   --anzhiyu-theme-deep: #C6B3B1;
   --anzhiyu-theme-op: #d1c1bf80;
@@ -13039,9 +13039,9 @@ details .content > *:nth-child(1) {
   --anzhiyu-card-btn-bg: #30343f;
   --anzhiyu-post-blockquote-bg: #000;
   --anzhiyu-post-tabs-bg: #121212;
-  --anzhiyu-secondbg: #30343f;
+  --anzhiyu-secondbg: rgba(24,24,30,0.4);
   --anzhiyu-shadow-nav: 0 5px 20px 0px rgba(28, 28, 28, 0.4);
-  --anzhiyu-card-bg: #1d1e22;
+  --anzhiyu-card-bg: rgba(24,24,30,0.5);
   --anzhiyu-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0);
   --anzhiyu-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0);
   --anzhiyu-card-border: #42444a;
@@ -14470,7 +14470,7 @@ body[data-type="essay"] #page .author-content-item .card-content .banner-button-
   }
 }
 [data-theme="dark"] #bbTimeList {
-  background: #000 !important;
+  background: rgba(24,24,30,0.5) !important;
 }
 #bbtalk {
   width: 100%;
@@ -21505,77 +21505,6 @@ span.categoryes-punctuation .icon-biaoqian {
   margin: 5px;
 }
 
-/* 由于全屏会出bug，所以直接给他隐藏 */
-
-.winbox {
-    border-radius: 12px;
-    overflow: hidden;
-}
-
-.wb-full {
-    display: none;
-}
-
-.wb-min {
-    background-position: center;
-}
-
-[data-theme='dark'] .wb-body,
-[data-theme='dark'] #changeBgBox {
-    background: #333 !important;
-}
-
-.bgbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.pimgbox,
-.imgbox,
-.box {
-    width: 166px;
-    margin: 10px;
-    background-size: cover
-}
-
-.pimgbox,
-.imgbox {
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.pimgbox {
-    height: 240px;
-}
-
-.imgbox {
-    height: 95px;
-}
-
-.box {
-    height: 100px;
-}
-
-@media screen and (max-width: 768px) {
-    /* 背景 */
-    .pimgbox,
-    .imgbox,
-    .box {
-        height: 73px;
-        width: 135px;
-    }
-    .pimgbox {
-        height: 205px;
-    }
-    /* 2.0新增内容 */
-    .wb-min {
-        display: none;
-    }
-    #changeBgBox .wb-body::-webkit-scrollbar {
-        display: none;
-    }
-}
 @font-face {
 font-family: 'iconfont';
 src: url('/fonts/iconfont.eot');

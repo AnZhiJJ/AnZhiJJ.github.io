@@ -1,4 +1,4 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>// 存数据
+// 存数据
 // name：命名 data：数据
 function saveData(name, data) {
     localStorage.setItem(name, JSON.stringify({ 'time': Date.now(), 'data': data }))
@@ -72,8 +72,10 @@ function createWinbox() {
 
     <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>
     <div class="bgbox">
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.staticaly.com/gh/AnZhiJJ/Blog_Img@main/博客站点配图/EuropeFromISS_ZH-CN0722816540_UHD.5swi0cngoh80.jpg)" class="imgbox" onclick="changeBg('url(https\://cdn.staticaly.com/gh/AnZhiJJ/Blog_Img@main/博客站点配图/Perihelion_ZH-CN8681537155_UHD.4sg9qjummmg0.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.staticaly.com/gh/AnZhiJJ/Blog_Img@main/博客站点配图/EuropeFromISS_ZH-CN0722816540_UHD.5swi0cngoh80.jpg)" class="imgbox" onclick="changeBg('url(https\://cdn.staticaly.com/gh/AnZhiJJ/Blog_Img@main/博客站点配图/Perihelion_ZH-CN8681537155_UHD.4sg9qjummmg0.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.staticaly.com/gh/AnZhiJJ/Blog_Img@main/博客站点配图/RedPlanetDay_ZH-CN4913018041_UHD.6w4o5n3ijpc0.jpg)" class="imgbox" onclick="changeBg('url(https\://cdn.staticaly.com/gh/AnZhiJJ/Blog_Img@main/博客站点配图/RedPlanetDay_ZH-CN4913018041_UHD.6w4o5n3ijpc0.jpg)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/dd4aee16880411ebb6edd017c2d2eca2.webp)" class="imgbox" onclick="changeBg('url(https \://cdn.leonus.cn/img/dd4aee16880411ebb6edd017c2d2eca2.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/66a0f1473a0f4ae7850ac8607774eb03.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/66a0f1473a0f4ae7850ac8607774eb03.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/058fe486bd784f28875a7a01f68d09de.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/058fe486bd784f28875a7a01f68d09de.webp)')"></a>
     </div>
 
 
@@ -81,6 +83,10 @@ function createWinbox() {
     <h2 id="渐变色"><a href="#渐变色" class="headerlink" title="渐变色"></a>渐变色</h2>
     <div class="bgbox">
     <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #eecda3, #ef629f)" onclick="leonus.changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, rgb(255, 110, 127), rgb(191, 233, 255))" onclick="leonus.changeBg('linear-gradient(to right, #eecda3, #ef629f)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" class="box" style="background: linear-gradient(to right, #ff4b1f, #1fddff)" onclick="leonus.changeBg('linear-gradient(to right, #ff4b1f, #1fddff)')"></a>
     </div>
 
     <h2 id="纯色"><a href="#纯色" class="headerlink" title="纯色"></a>纯色</h2>
