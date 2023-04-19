@@ -2000,7 +2000,8 @@ a:hover {
 .site-name,
 #aside-content .author-info__name,
 #aside-content .author-info__description {
-  font-family: Ma Shan Zheng;
+  text-align: center;
+  font-family: 'anzhiyufont';
 }
 .is-center {
   text-align: center;
@@ -4782,6 +4783,7 @@ h1.page-title + .tag-cloud-list {
   position: relative;
 }
 #aside-content > .card-info .author-info__name {
+  text-align: center;
   line-height: 1.5em;
   margin: 4px 0;
 }
@@ -7578,6 +7580,9 @@ div.btns.rounded a > i:first-child {
 details[open]:not(.tk-admin-config-group) {
   background: var(--anzhiyu-card-bg);
 }
+[data-theme="dark"] details.folding-tag {
+  background: transparent;
+}
 details.folding-tag {
   display: block;
   padding: 16px;
@@ -9144,6 +9149,7 @@ p.p.gray {
   background: -ms-linear-gradient(90deg, #0092ff, #20b8ff);
   background: linear-gradient(0deg, #0092ff, #20b8ff);
   content: "\f129";
+  font-family: anzhiyufont;
   text-shadow: 0 -1px #20a0ff;
 }
 .tip.success {
@@ -9165,6 +9171,7 @@ p.p.gray {
   background: linear-gradient(0deg, #52bb1d, #95d34b);
   content: "\f00c";
   text-shadow: 0 -1px #61be33;
+  font-family: anzhiyufont;
 }
 .tip.warning {
   background: #ff953f;
@@ -9183,8 +9190,9 @@ p.p.gray {
   background: -o-linear-gradient(90deg, #ff8f35, #ffc149);
   background: -ms-linear-gradient(90deg, #ff8f35, #ffc149);
   background: linear-gradient(0deg, #ff8f35, #ffc149);
-  content: "\f12a";
+  content: '\f06a';
   text-shadow: 0 -1px #ff953f;
+  font-family: anzhiyufont;
 }
 .tip.error {
   background: #ff4949;
@@ -9203,8 +9211,9 @@ p.p.gray {
   background: -o-linear-gradient(90deg, #ff3838, #ff7849);
   background: -ms-linear-gradient(90deg, #ff3838, #ff7849);
   background: linear-gradient(0deg, #ff3838, #ff7849);
-  content: "\f00d";
+  content: $note-error-icon;
   text-shadow: 0 -1px #ff4949;
+  font-family: anzhiyufont;
 }
 .tip.bolt {
   background: -webkit-linear-gradient(80deg, #78ca33, #25822c);
@@ -9223,6 +9232,7 @@ p.p.gray {
   background: linear-gradient(776deg, #78ca33, #25822c);
   content: "\f0e7";
   text-shadow: 0 -1px #4cf706;
+  font-family: anzhiyufont;
 }
 .tip.ban {
   background: -webkit-linear-gradient(0deg, #ff4949, #f03b49);
@@ -9242,6 +9252,7 @@ p.p.gray {
   background: linear-gradient(0deg, #ff3838, #ff1022);
   content: "\f05e";
   text-shadow: 0 -1px #ff4949;
+  font-family: anzhiyufont;
 }
 .tip.home {
   background: #15e5ff;
@@ -9262,6 +9273,7 @@ p.p.gray {
   background: -ms-linear-gradient(90deg, #0ec0ee, #0ec0ea);
   background: linear-gradient(0deg, #0ec0ee, #0ec0ea);
   content: "\f015";
+  font-family: anzhiyufont;
   text-shadow: 0 -1px #0ec0ea;
 }
 .tip.sync {
@@ -9283,6 +9295,7 @@ p.p.gray {
   background: -ms-linear-gradient(180deg, #40c0e2, #3dc550);
   background: linear-gradient(270deg, #40c0e2, #3dc550);
   content: "\f021";
+  font-family: anzhiyufont;
   text-shadow: 0 -1px #17cfff;
 }
 .tip.cogs {
@@ -9303,6 +9316,7 @@ p.p.gray {
   background: -ms-linear-gradient(110deg, #40c0e2, #5246e2);
   background: linear-gradient(560deg, #40c0e2, #5246e2);
   content: "\f085";
+  font-family: anzhiyufont;
   text-shadow: 0 -1px #098cf5;
 }
 .tip.key {
@@ -9324,6 +9338,7 @@ p.p.gray {
   background: -ms-linear-gradient(110deg, #bccdd2, #cfced4);
   background: linear-gradient(560deg, #bccdd2, #cfced4);
   content: "\f084";
+  font-family: anzhiyufont;
   text-shadow: 0 -1px #a9b2b9;
 }
 .tip.bell {
@@ -9343,6 +9358,7 @@ p.p.gray {
   background: -ms-linear-gradient(110deg, #f9ae07, #ffb615);
   background: linear-gradient(560deg, #f9ae07, #ffb615);
   content: "\f0f3";
+  font-family: anzhiyufont;
   text-shadow: 0 -1px #ffb81b;
 }
 [data-theme="dark"] .tip {
@@ -9773,7 +9789,7 @@ p.p.gray {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
   overflow: scroll;
 }
@@ -11519,7 +11535,7 @@ body[data-type="album_detail"] #page .author-content-item .card-content .banner-
   border-radius: 8px;
   background: var(--anzhiyu-black-op);
   font-size: 12px;
-  color: var(--anzhiyu-post-tabs-bg);
+  color: var(--anzhiyu-white);
   transition: 0.3s;
   z-index: 1;
   user-select: none;
@@ -11879,14 +11895,19 @@ body::-webkit-scrollbar {
 }
 
 #article-container
-  a:not([data-fancybox="gallery"]):not(.headerlink):not(.cf-friends-link):not(.tag-Link):not(.btn-anzhiyu):not(.no-text-decoration) {
+  a:not([data-fancybox="gallery"]):not(.headerlink):not(.cf-friends-link):not(.tag-Link):not(.btn-anzhiyu):not(
+    .no-text-decoration
+  ) {
   font-weight: 500;
   border-bottom: solid 2px var(--anzhiyu-lighttext);
   color: var(--anzhiyu-fontcolor);
   padding: 0 0.2em;
   text-decoration: none;
 }
-#article-container a:not([data-fancybox="gallery"]):not(.headerlink):not(.cf-friends-link):not(.btn-anzhiyu):not(.no-text-decoration):hover {
+#article-container
+  a:not([data-fancybox="gallery"]):not(.headerlink):not(.cf-friends-link):not(.btn-anzhiyu):not(
+    .no-text-decoration
+  ):hover {
   color: var(--anzhiyu-white);
   background: var(--anzhiyu-theme);
   box-shadow: var(--anzhiyu-shadow-lightblack);
@@ -11977,13 +11998,13 @@ html.hide-aside .layout > div:first-child {
   animation: slide-in 0.6s 0.3s backwards;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   #page > div:not(.author-content-item) {
     animation: slide-in 0.6s 0.2s backwards;
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .author-content-item {
     animation: slide-in 0.6s 0s backwards;
   }
@@ -12074,7 +12095,7 @@ html.hide-aside .layout > div:first-child {
   color: var(--anzhiyu-white) !important;
   box-shadow: var(--anzhiyu-shadow-theme);
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   #aside-content .card-tag-cloud a:active {
     transform: scale(0.97);
   }
@@ -12126,7 +12147,7 @@ li.card-archive-list-item {
   border: 1px solid transparent;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   #content-inner #aside-content .card-archives ul.card-archive-list > .card-archive-list-item a:hover,
   #content-inner #aside-content .card-categories ul.card-category-list > .card-category-list-item a:hover {
     padding-left: 0.5rem;
@@ -12197,7 +12218,7 @@ li.card-archive-list-item {
   margin: 6px 0;
   cursor: pointer;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   #aside-content .aside-list > .aside-list-item:hover {
     transform: scale(1.03);
   }
@@ -13669,7 +13690,7 @@ body:has(#console.show) #nav-music .aplayer .aplayer-lrc .aplayer-lrc-contents {
   margin-top: 80px;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1450px) {
+@media screen and (min-width: 1025px) and (max-width: 1450px) {
   body:has(#console.show) #nav-music {
     left: 45%;
   }
@@ -15393,7 +15414,7 @@ span.top-group-text {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .topGroup {
     animation: slide-in 0.6s 0.1s backwards;
   }
@@ -15929,7 +15950,7 @@ div#bannerGroup {
   flex: 1;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   .topGroup .todayCard {
     position: absolute;
     width: calc(600px + 1rem);
@@ -16173,11 +16194,13 @@ div#bannerGroup {
   color: var(--anzhiyu-white);
 }
 
-.topGroup .recent-post-item:nth-child(4),
-.topGroup .recent-post-item:nth-child(5),
-.topGroup .recent-post-item:nth-child(6) {
-  margin-bottom: 0;
-  margin-top: 4px;
+@media screen and (min-width: 1025px) {
+  .topGroup .recent-post-item:nth-child(4),
+  .topGroup .recent-post-item:nth-child(5),
+  .topGroup .recent-post-item:nth-child(6) {
+    margin-bottom: 0;
+    margin-top: 4px;
+  }
 }
 
 #local-search .search-dialog .local-search__hit-item:before {
@@ -16416,7 +16439,7 @@ ul.menus_item_child {
     font-weight: 700;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   #page-header.nav-fixed #nav #page-name:hover:after {
     opacity: 1;
   }
@@ -16889,7 +16912,7 @@ a.article-meta__categories:hover {
   background: var(--anzhiyu-main);
 }
 /* 分页样式 */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   #pagination a.extend.next:hover,
   #pagination a.extend.prev:hover {
     transform: scale(1.03);
@@ -20734,6 +20757,11 @@ span.categoryes-punctuation .icon-biaoqian {
 [data-theme="dark"] .post-meta__box a {
   opacity: 0.5;
 }
+[data-theme="dark"] .post-reward .reward-button,
+[data-theme="dark"] .reward-link.mode {
+  opacity: 0.5;
+}
+
 .post-meta__box__tag-list a:nth-child(5n) {
   background-color: #4a4a4a;
   color: #fff;
