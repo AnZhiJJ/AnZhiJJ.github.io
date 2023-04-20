@@ -3794,6 +3794,10 @@ body[data-type="music"] #page-header #nav a,
 body[data-type="music"] #page-header #nav .back-home-button {
   color: var(--anzhiyu-white);
 }
+body[data-type="music"] #page-header #nav a i,
+body[data-type="music"] #page-header #nav .back-home-button i {
+  color: var(--anzhiyu-white) !important;
+}
 body[data-type="music"] #footer,
 body[data-type="music"] #nav-music {
   display: none;
@@ -10229,7 +10233,7 @@ p.p.gray {
   min-height: 240px;
   position: relative;
   overflow: hidden;
-  width: 39%;
+  width: 49%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11032,7 +11036,11 @@ p.p.gray {
     font-size: calc((0.0989119683 * 100vw + (58.5558852621px)));
   }
 }
-
+@media (max-width: 768px) {
+  .hello-about {
+    margin: 20px 0 auto;
+  }
+}
 .cursor {
   position: absolute;
   background: #2128bd;
@@ -11730,7 +11738,6 @@ body[data-type="album"] #page .page-title {
     width: calc(100%);
   }
 }
-
 #algolia-search #search-mask {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
@@ -14589,11 +14596,6 @@ i.bber-gotobb {
   width: 66px;
 }
 
-#page:has(.aplayer):has(.aplayer-body):has(.aplayer-list) #post-comment .tk-comments-container > .tk-comment {
-  border: none;
-  box-shadow: none;
-}
-
 /* 导航栏音乐 */
 @media screen and (max-width: 1024px) {
   #nav-music {
@@ -15499,7 +15501,7 @@ span.top-group-text {
 }
 
 #home_top ~ main {
-  padding: 0 15px 20px;
+  padding: 0px 15px 20px 0px;
 }
 
 a span.top-group-text {
