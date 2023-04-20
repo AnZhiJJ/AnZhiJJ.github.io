@@ -7719,7 +7719,7 @@ details.folding-tag summary:hover:after {
   right: 16px;
 }
 details.folding-tag >summary {
-  background: #f6f6f6;
+  background: var(--anzhiyu-card-bg);
 }
 details.folding-tag[purple] {
   border-color: #fae7fd;
@@ -12931,7 +12931,7 @@ details.folding-tag[open] > summary {
 }
 details.folding-tag > summary {
   border: var(--style-border) !important;
-  background: var(--anzhiyu-card-bg) !important;
+  background: var(--anzhiyu-card-bg) ;
   border-radius: 14px !important;
   box-shadow: var(--anzhiyu-shadow-border);
   color: var(--font-color) !important;
@@ -16214,10 +16214,6 @@ div#bannerGroup {
 }
 
 @media screen and (max-width: 1024px) {
-  #random-banner {
-    display: none;
-  }
-
   .topGroup .todayCard {
     background: #0e57d5;
   }
@@ -16254,6 +16250,7 @@ div#bannerGroup {
   .categoryItem {
     height: 48%;
     min-width: 200px;
+    box-shadow: none !important;
   }
   .categoryGroup {
     display: flex !important;
@@ -17382,6 +17379,7 @@ a#toPageButton {
   line-height: 1;
   font-size: 1.8rem;
   border-radius: 8px !important;
+
   text-decoration: none;
   font-weight: 700;
 }
@@ -17410,6 +17408,7 @@ a#toPageButton {
 #article-container.post-content h6 {
   /* font-size: 1.6rem; */
   line-height: 1.6;
+  class="headerlink" !important;
   border-top: 1px dashed var(--anzhiyu-theme-op);
   padding-top: 1.5rem;
   padding-left: 0;
