@@ -4759,7 +4759,7 @@ h1.page-title + .tag-cloud-list {
   transition: all 0.2s ease-in-out;
 }
 #aside-content #card-toc .toc-content .toc-link:hover {
-  color: #b19693;
+  color: var(--anzhiyu-lighttext);
 }
 #aside-content #card-toc .toc-content .toc-link.active {
   background: #b19693;
@@ -12094,10 +12094,6 @@ html.hide-aside .layout > div:first-child {
   animation-fill-mode: backwards !important;
 }
 
-[data-theme="dark"] img {
-  filter: brightness(1);
-}
-
 /* 文章hover边框 */
 #recent-posts .recent-post-item:hover {
   border: var(--style-border-hover);
@@ -14075,15 +14071,17 @@ body:has(#console.show) #nav-music .aplayer .aplayer-lrc .aplayer-lrc-contents {
     white-space: nowrap;
     animation: an-text-roll 4s cubic-bezier(0.6, 0, 0.5, 1) alternate infinite;
     min-width: 100%;
-    margin: 0;
+    /* margin: 0; */
   }
   body:has(#console.show) #nav-music .aplayer .aplayer-lrc p {
     color: var(--anzhiyu-white);
     font-size: 16px;
     margin: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   body:has(#console.show) #nav-music .aplayer .aplayer-lrc .aplayer-lrc-contents {
-    margin: 0;
+    margin: -40px 0px 0;
   }
   body:has(#console.show) #nav-music .aplayer .aplayer-info .aplayer-controller .aplayer-time {
     color: var(--anzhiyu-white);
@@ -14571,7 +14569,7 @@ body[data-type="essay"] #page .author-content-item .card-content .banner-button-
 #bber .aplayer .aplayer-lrc p {
   color: var(--anzhiyu-fontcolor);
   min-height: 40px;
-  line-height: 40px !important;
+  line-height: 30px !important;
   height: 40px !important;
   margin: 0 !important;
 }
@@ -14992,7 +14990,7 @@ i.bber-gotobb {
   color: #ffffffb3;
   line-height: 20px !important;
   height: 20px !important;
-  margin: 20px 0 !important;
+  margin: 20px 0;
 }
 
 #nav-music .aplayer .aplayer-pic {
