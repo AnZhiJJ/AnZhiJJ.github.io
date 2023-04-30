@@ -15591,7 +15591,7 @@ span.top-group-text {
 }
 
 #home_top ~ main {
-  padding: 0px 15px 20px 0px;
+  padding: -3px 15px 20px 0px;
 }
 
 a span.top-group-text {
@@ -17484,7 +17484,6 @@ a#toPageButton {
 #article-container.post-content h6 {
   /* font-size: 1.6rem; */
   line-height: 1.6;
-  class="headerlink" !important;
   border-top: 1px dashed var(--anzhiyu-theme-op);
   padding-top: 1.5rem;
   padding-left: 0;
