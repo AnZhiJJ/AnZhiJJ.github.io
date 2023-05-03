@@ -3778,6 +3778,9 @@ body[data-type="link"] #page .page-title {
   #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator {
     display: none;
   }
+  #recent-posts > .recent-post-item >.recent-post-info > .content {
+    display: none;
+  }
 }
 body[data-type="music"] {
   background: #0d0d0d;
@@ -4723,7 +4726,7 @@ h1.page-title + .tag-cloud-list {
 #aside-content #card-toc .toc-content {
   overflow-y: scroll;
   overflow-y: overlay;
-  margin: 0 -24px;
+  margin: 0 -30px;
   max-height: calc(100vh - 120px);
 }
 @media screen and (max-width: 900px) {
@@ -6983,37 +6986,6 @@ mjx-container[display],
 }
 .snackbar-css {
   border-radius: 5px !important;
-}
-#hexo-circle-of-friends-root {
-  overflow: hidden;
-}
-#hexo-circle-of-friends-root .fcircle_page {
-  overflow: hidden;
-  max-width: 1450px;
-}
-#hexo-circle-of-friends-root .fcircle_page .cf-article-group {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: box;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -o-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-lines: multiple;
-  -moz-box-lines: multiple;
-  -o-box-lines: multiple;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0 -8px;
-}
-#hexo-circle-of-friends-root .fcircle_page .fish-pond-item {
-  width: 25%;
 }
 [data-theme="dark"] div.btns {
   filter: brightness(0.7);
@@ -12427,7 +12399,7 @@ li.card-archive-list-item {
   padding: 0.4rem 1rem !important;
 }
 
-/* 文章otc */
+/* 文章toc */
 #aside-content #card-toc .toc-content .toc-link.active {
   border-radius: var(--anzhiyu-border-radius);
 }
@@ -13088,7 +13060,7 @@ details .content > *:nth-child(1) {
   --anzhiyu-main-op-deep: var(--anzhiyu-theme-op-deep) !important;
   --anzhiyu-gray-op: #9999992b;
   --anzhiyu-theme-top: var(--anzhiyu-theme);
-  --anzhiyu-white: rgba(255, 255, 255, 0.6);
+  --anzhiyu-white: rgba(255, 255, 255, 255);
   --anzhiyu-white-op: rgba(255, 255, 255, 0.2);
   --anzhiyu-black: rgba(24,24,30,0.5);
   --anzhiyu-black-op: rgba(0, 0, 0, 0.2);
@@ -17264,6 +17236,21 @@ a#toPageButton {
   background: var(--anzhiyu-secondbg);
   border: 1px solid var(--anzhiyu-none);
   border-radius: 4px;
+}
+
+/*版权卡片*/
+#post .post-copyright {
+position: relative;
+margin: 0rem 0 0.5rem;
+padding: 1rem 1.3rem;
+border: 1px solid var(--anzhiyu-theme-op); /*卡片边框*/
+border-radius: 20px; /*边框圆角*/
+}
+#post .post-copyright:before {
+position: absolute;
+top: -1.9rem; /*C位置*/
+color: #49b1f540; /*C颜色*/
+font-size: 6rem; /*C大小*/
 }
 
 #page-header.post-bg {
@@ -21729,13 +21716,24 @@ src: url('/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
      url('/fonts/iconfont.svg#iconfont') format('svg');
 }
 
-
 .iconfont {
   font-family: "iconfont" !important;
   font-size: 16px;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-gonggaopai:before {
+  content: "\e61f";
+}
+
+.icon-aliyun:before {
+  content: "\ee48";
+}
+
+.icon-bilibili:before {
+  content: "\e606";
 }
 
 .icon-kongzhitai:before {
@@ -21769,7 +21767,6 @@ src: url('/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
 .icon-zuozhe:before {
   content: "\e65c";
 }
-
 
 
 .search-dialog {
