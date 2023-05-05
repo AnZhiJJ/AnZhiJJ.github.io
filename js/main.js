@@ -484,12 +484,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const $rightside = document.getElementById("rightside");
     const innerHeight = window.innerHeight + 56;
 
-    // 當滾動條小于 56 的時候，且不是朋友圈页面: ps朋友圈页面加载完之前 高度不够 会导致无法监听到滚动
+    // 當滾動條小于 56 的時候
     if (document.body.scrollHeight <= innerHeight) {
       $rightside.style.cssText = "opacity: 1; transform: translateX(-58px)";
-      if (!window.location.pathname.startsWith("/fcircle")) {
-        return;
-      }
     }
 
     // find the scroll direction
@@ -564,20 +561,20 @@ document.addEventListener("DOMContentLoaded", function () {
       const $cardTocLayout = document.getElementById("card-toc");
       $cardToc = $cardTocLayout.getElementsByClassName("toc-content")[0];
       $tocLink = $cardToc.querySelectorAll(".toc-link");
-      const $tocPercentage = $cardTocLayout.querySelector(".toc-percentage");
+      // const $tocPercentage = $cardTocLayout.querySelector(".toc-percentage");
       isExpand = $cardToc.classList.contains("is-expand");
 
-      scrollPercent = currentTop => {
-        const docHeight = $article.clientHeight;
-        const winHeight = document.documentElement.clientHeight;
-        const headerHeight = $article.offsetTop;
-        const contentMath =
-          docHeight > winHeight ? docHeight - winHeight : document.documentElement.scrollHeight - winHeight;
-        const scrollPercent = (currentTop - headerHeight) / contentMath;
-        const scrollPercentRounded = Math.round(scrollPercent * 100);
-        const percentage = scrollPercentRounded > 100 ? 100 : scrollPercentRounded <= 0 ? 0 : scrollPercentRounded;
-        $tocPercentage.textContent = percentage;
-      };
+      // scrollPercent = currentTop => {
+      //   const docHeight = $article.clientHeight;
+      //   const winHeight = document.documentElement.clientHeight;
+      //   const headerHeight = $article.offsetTop;
+      //   const contentMath =
+      //     docHeight > winHeight ? docHeight - winHeight : document.documentElement.scrollHeight - winHeight;
+      //   const scrollPercent = (currentTop - headerHeight) / contentMath;
+      //   const scrollPercentRounded = Math.round(scrollPercent * 100);
+      //   const percentage = scrollPercentRounded > 100 ? 100 : scrollPercentRounded <= 0 ? 0 : scrollPercentRounded;
+      //   $tocPercentage.textContent = percentage;
+      // };
 
       window.mobileToc = {
         open: () => {
@@ -673,7 +670,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.tocScrollFn = function () {
       return anzhiyu.throttle(function () {
         const currentTop = window.scrollY || document.documentElement.scrollTop;
-        isToc && scrollPercent(currentTop);
+        // isToc && scrollPercent(currentTop);
         findHeadPosition(currentTop);
       }, 100)();
     };
