@@ -65,15 +65,19 @@ function createWinbox() {
     <div id="article-container" style="padding:10px;">
 
     <p><button onclick="localStorage.removeItem('blogbg');location.reload();" style="background:#5fcdff;display:block;width:100%;padding: 15px 0;border-radius:6px;color:white;"><i class="fa-solid fa-arrows-rotate"></i> 点我恢复默认背景</button></p>
-    <h2 id="图片（手机）"><a href="#图片（手机）" class="headerlink" title="图片（手机）"></a>图片（手机）</h2>
-    <div class="bgbox">
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)" class="pimgbox" onclick="changeBg('url(https\://img.vm.laomishuo.com/image/2021/12/2021122715170589.jpeg)')"></a>
-    </div>
-
-    <h2 id="图片（电脑）"><a href="#图片（电脑）" class="headerlink" title="图片（电脑）"></a>图片（电脑）</h2>
+    <h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2>
     <div class="bgbox">
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.staticaly.com/gh/AnZhiJJ/Blog_Img@main/博客站点配图/RedPlanetDay_ZH-CN4913018041_UHD.6w4o5n3ijpc0.jpg)" class="imgbox" onclick="changeBg('url(https\://cdn.staticaly.com/gh/AnZhiJJ/Blog_Img@main/博客站点配图/RedPlanetDay_ZH-CN4913018041_UHD.6w4o5n3ijpc0.jpg)')"></a>
-    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/dd4aee16880411ebb6edd017c2d2eca2.webp)" class="imgbox" onclick="changeBg('url(https \://cdn.leonus.cn/img/dd4aee16880411ebb6edd017c2d2eca2.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/dd4aee16880411ebb6edd017c2d2eca2.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/dd4aee16880411ebb6edd017c2d2eca2.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/c9d3deb2880411ebb6edd017c2d2eca2.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/c9d3deb2880411ebb6edd017c2d2eca2.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/0d73ff1af5c149c2af78a4c7280c9ac9.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/0d73ff1af5c149c2af78a4c7280c9ac9.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/08206a3879f9467f93eb18e279dd2642.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/08206a3879f9467f93eb18e279dd2642.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/14d9904fe2ac4961b203c3eb2f2f467f.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/14d9904fe2ac4961b203c3eb2f2f467f.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/f048e9726518419fa15dd365902500c4.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/f048e9726518419fa15dd365902500c4.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/bab9141327ca48e39abef6229b79cf9c.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/bab9141327ca48e39abef6229b79cf9c.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/a26f66658e014e06aa70e2753742bef3.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/a26f66658e014e06aa70e2753742bef3.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/35d9316f450041b89232893f083a57f1.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/35d9316f450041b89232893f083a57f1.webp)')"></a>
+    <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/6143778327db4d17adbb63c0f6c0a8af.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/6143778327db4d17adbb63c0f6c0a8af.webp)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/66a0f1473a0f4ae7850ac8607774eb03.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/66a0f1473a0f4ae7850ac8607774eb03.webp)')"></a>
     <a href="javascript:;" rel="noopener external nofollow" style="background-image:url(https://cdn.leonus.cn/img/058fe486bd784f28875a7a01f68d09de.webp)" class="imgbox" onclick="changeBg('url(https\://cdn.leonus.cn/img/058fe486bd784f28875a7a01f68d09de.webp)')"></a>
     </div>

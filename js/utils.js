@@ -74,7 +74,6 @@ const anzhiyu = {
     });
   },
 
-
   loadComment: (dom, callback) => {
     if ("IntersectionObserver" in window) {
       const observerItem = new IntersectionObserver(
@@ -741,7 +740,7 @@ const anzhiyu = {
       return;
     }
     const urlParams = new URLSearchParams(window.location.search);
-    const userId = "2194084411";
+    const userId = "8152976493";
     const userServer = "netease";
     const anMusicPageMeting = document.getElementById("anMusic-page-meting");
     if (urlParams.get("id") && urlParams.get("server")) {
