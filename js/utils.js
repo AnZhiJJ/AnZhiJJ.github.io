@@ -524,7 +524,7 @@ const anzhiyu = {
   },
   //友链随机传送
   travelling() {
-    var fetchUrl = "https://friends.anzhiy.cn/randomfriend";
+    var fetchUrl = GLOBAL_CONFIG.friends_vue_info.apiurl + "randomfriend";
     fetch(fetchUrl)
       .then(res => res.json())
       .then(json => {
@@ -1066,7 +1066,7 @@ const anzhiyu = {
     document.querySelector(".reward-main").style.display = "none";
     document.getElementById("quit-box").style.display = "none";
   },
-
+  //快捷键开关函数
   keyboardToggle: function () {
     const isKeyboardOn = anzhiyu_keyboard;
 

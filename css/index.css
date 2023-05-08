@@ -3649,6 +3649,58 @@ body[data-type="link"] #page .page-title {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+#recent-posts > .recent-post-item .recent-post-info {
+  margin-top: 0px;
+  position: relative;
+}
+#recent-posts > .recent-post-item .recent-post-info .newPost {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  color: var(--anzhiyu-lighttext);
+  font-size: 0.5rem;
+  position: absolute;
+  top: 3px;
+}
+#recent-posts > .recent-post-item .recent-post-info .article-title {
+  font-weight: bold;
+}
+#recent-posts > .recent-post-item .article-meta__categories__box {
+  position: absolute;
+  top: 15px;
+  left: 11px;
+  z-index: 2;
+  max-width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+#recent-posts > .recent-post-item .article-meta__categories__box .article-meta__categories {
+  display: inline-block;
+  padding: 1px 6px;
+  background: var(--anzhiyu-black-op);
+  border-radius: 8px;
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--anzhiyu-white);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+}
+#recent-posts > .recent-post-item .article-meta__categories__box .article-meta__categories:hover {
+  background: var(--anzhiyu-main);
+}
 @media screen and (max-width: 768px) {
   #recent-posts > .recent-post-item {
     -webkit-box-orient: vertical;
@@ -3909,6 +3961,27 @@ body[data-type="link"] #page .page-title {
   #recent-posts > .recent-post-item >.recent-post-info > .article-meta-wrap > .tags > .article-meta__separator {
     display: none;
   }
+}
+#content-inner #recent-posts > .recent-post-item > .recent-post-info > .content {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  -ms-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  display: -webkit-box;
+  height: 0;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.4;
+  color: var(--anzhiyu-secondtext);
+  margin-top: 0.5rem;
+}
+#recent-posts > .recent-post-item > .recent-post-info > .article-title {
+  margin: 0 !important;
 }
 body[data-type="music"] {
   background: #0d0d0d;
@@ -6778,7 +6851,7 @@ blockquote {
 @media screen and (max-width: 768px) {
   #post .tag_share .post-meta__box__tags,
   #post .tag_share .post-meta__box__categoryes {
-    margin: 4px 8px 4px 0;
+    margin: 4px 8px 4px 0 !important;
   }
 }
 #post .tag_share .post-meta__box__tags {
@@ -6882,9 +6955,16 @@ blockquote {
   -webkit-box-shadow: 0 0 8px 0 rgba(232,237,250,0.6), 0 2px 4px 0 rgba(232,237,250,0.5);
   box-shadow: 0 0 8px 0 rgba(232,237,250,0.6), 0 2px 4px 0 rgba(232,237,250,0.5);
 }
+#post .post-copyright .post-copyright-title {
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
 #post .post-copyright .post-copyright-meta {
   color: #b19693;
   font-weight: bold;
+  min-width: 75px;
 }
 #post .post-copyright .post-copyright-info {
   padding-left: 6px;
@@ -6953,6 +7033,11 @@ blockquote {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  #post .post-copyright .post-copyright__type .copy-button {
+    display: none;
+  }
 }
 #post .post-copyright .post-copyright__type .copy-button:hover {
   background: var(--anzhiyu-theme);
@@ -7268,6 +7353,18 @@ blockquote {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 0.5rem;
+}
+.post-tools .post-tools-left .rewardLeftButton,
+.post-tools .post-tools-left .shareRight {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+}
+.post-tools .post-tools-left .rewardLeftButton {
+  overflow: hidden;
 }
 @media screen and (max-width: 768px) {
   .post-tools .post-tools-left {
@@ -10228,8 +10325,8 @@ p.p.gray {
 #article-container .timeline .timeline-item .timeline-item-content {
   position: relative;
   padding: 12px 15px;
-  border-radius: 8px;
-  background: var(--timeline-bg, #f3efef);
+  border-radius: 0.5rem;
+  border: var(--style-border-always);
   font-size: 0.93em;
 }
 #article-container .timeline .timeline-item .timeline-item-content > :last-child {
@@ -16966,6 +17063,9 @@ div#bannerGroup {
   div#travellings_button {
     display: none !important;
   }
+  #randomPost_button {
+    display: none !important;
+  }
 }
 
 #nav a:hover {
@@ -17537,59 +17637,6 @@ center#name-container {
   }
 }
 
-/* 最新文章图标 */
-.recent-post-info .newPost {
-  display: flex;
-  color: var(--anzhiyu-lighttext);
-  font-size: 0.5rem;
-  position: absolute;
-  top: 3px;
-}
-
-#recent-posts > .recent-post-item > .recent-post-info > .article-title {
-  margin: 0 !important;
-}
-
-.recent-post-item .recent-post-info {
-  margin-top: 0px;
-  position: relative;
-}
-
-.recent-post-item .recent-post-info .article-title {
-  font-weight: bold;
-}
-#content-inner #recent-posts > .recent-post-item > .recent-post-info > .content {
-  opacity: 0;
-  transition: all 0.3s ease 0s;
-  display: -webkit-box;
-  height: 0;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-  line-height: 1.4;
-  color: var(--anzhiyu-secondtext);
-  margin-top: 0.5rem;
-}
-
-a.article-meta__categories {
-  position: absolute;
-  padding: 1px 6px;
-  background: var(--anzhiyu-black-op);
-  border-radius: 8px;
-  margin-left: 0;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--anzhiyu-white);
-  top: 15px;
-  left: 15px;
-  backdrop-filter: saturate(180%) blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  transform: translateZ(0);
-}
-
-a.article-meta__categories:hover {
-  background: var(--anzhiyu-main);
-}
 /* 分页样式 */
 @media screen and (min-width: 1025px) {
   #pagination a.extend.next:hover,
