@@ -1835,7 +1835,7 @@ i.anzhiyu-icon-hashtag {
   --hr-before-color: #bfe4fb;
   --search-bg: #f6f8fa;
   --search-input-color: #4c4948;
-  --search-a-color: $search-a-color;
+  --search-result-title: #4c4948;
   --preloader-bg: #37474f;
   --preloader-color: #fff;
   --tab-border-color: #f0f0f0;
@@ -1987,8 +1987,8 @@ body {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 *::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 8px;
+  height: 8px;
 }
 *::-webkit-scrollbar-thumb {
   background: var(--scrollbar-color);
@@ -2064,7 +2064,8 @@ hr:before {
 }
 .table-wrap {
   overflow-x: scroll;
-  margin: 0 0 20px;
+  margin: 1rem 0;
+  border-radius: 8px;
 }
 table {
   display: table;
@@ -2074,13 +2075,13 @@ table {
   empty-cells: show;
 }
 table thead {
-  background: rgba(241,243,248,0.1);
+  background: var(--anzhiyu-secondbg);
 }
 table th,
 table td {
-  padding: 6px 12px;
-  border: 1px solid var(--light-grey);
+  padding: 0.3rem 0.6rem;
   vertical-align: middle;
+  border: var(--style-border-always);
 }
 *::selection {
   background: #b19698;
@@ -2110,7 +2111,7 @@ a:hover {
 }
 #site-title,
 #site-subtitle,
-.site-name,
+#site-name,
 #aside-content .author-info__name,
 #aside-content .author-info__description {
   text-align: center;
