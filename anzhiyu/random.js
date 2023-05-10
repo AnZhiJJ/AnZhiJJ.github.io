@@ -1,1 +1,1 @@
-var posts=["techdoc1.html","C9.html","C8.html","techdoc2.html","pybasic2.html","pybasic1.html"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
+var posts=["techdoc1.html","C9.html","C8.html","pybasic2.html","techdoc2.html","pybasic1.html"];function toRandomPost(){pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);};
