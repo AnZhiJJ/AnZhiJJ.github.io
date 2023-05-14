@@ -1,4 +1,4 @@
-<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>var CountUp = function (target, startVal, endVal, decimals, duration, options) {
+var CountUp = function (target, startVal, endVal, decimals, duration, options) {
   var self = this;
   self.version = function () {
     return "1.9.2";
